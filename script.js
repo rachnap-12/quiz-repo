@@ -1,6 +1,7 @@
 const quiz = document.getElementById('quiz');
 let score = document.getElementById('score');
 const countdown = document.getElementById('countdown');
+let totalScore = document.getElementById('totalScore')
 let qaSet = document.querySelectorAll('.quiz_header');
 let ansRow = document.querySelectorAll('.quiz_header .qa_ans_row input');
 console.log(ansRow);
@@ -43,10 +44,12 @@ ansRow.forEach((ansRowSingle) => {
         if(valid == "valid") {
             scoreCount += 10;
             score.innerHTML = scoreCount;
+            totalScore.innerHTML = score;
             
         }else{
             scoreCount = scoreCount;
             score.innerHTML = scoreCount;
+            totalScore.innerHTML = score;
 
         }
     })

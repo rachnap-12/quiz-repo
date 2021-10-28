@@ -74,6 +74,8 @@ img {
 
 .qa_ans_row input {
   position: absolute;
+  margin-top: 14px;
+  margin-left: 30px;
 }
 
 .qa_ans_row span {

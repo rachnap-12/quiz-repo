@@ -3,6 +3,7 @@
 var quiz = document.getElementById('quiz');
 var score = document.getElementById('score');
 var countdown = document.getElementById('countdown');
+var totalScore = document.getElementById('totalScore');
 var qaSet = document.querySelectorAll('.quiz_header');
 var ansRow = document.querySelectorAll('.quiz_header .qa_ans_row input');
 console.log(ansRow); // const submitBtn = document.getElementById('submit');
@@ -45,9 +46,11 @@ ansRow.forEach(function (ansRowSingle) {
     if (valid == "valid") {
       scoreCount += 10;
       score.innerHTML = scoreCount;
+      totalScore.innerHTML = score;
     } else {
       scoreCount = scoreCount;
       score.innerHTML = scoreCount;
+      totalScore.innerHTML = score;
     }
   });
 });
