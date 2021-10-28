@@ -1,4 +1,4 @@
-### This is a simple Javascipt Quiz application
+### This is a simple Javascript Quiz application
 
 <!--
 **rachnap-12/rachnap-12** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
