@@ -13,25 +13,39 @@ body{
   height: 100vh;
   overflow: hidden;
   margin: 0;
+  // background-size: cover;
 }
 
 .start .info_box{
-    position: absoltue;
+    position: absolute;
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
 }
 
-// .start button{
-//     font-size:25px;
-//     font-weight: 500;
-//     padding:15px 30px;
-//     outline: none;
-//     border: none;
-//     border-radius: 5px;
-//     cursor: pointer;
-// }
+.start button{
+    font-size:25px;
+    font-weight: 500;
+    padding:15px 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
+.start{
+  width: 1000px;
+  height: 600px;
+}
+
+img{
+  width: 1400px;
+  height: 700px;
+}
+
+p{
+  // background-image: url("https://th.bing.com/th/id/OIP.DcOMg9mOZq-xCbGPUvk6eQHaHa?w=168&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7");
+}
 // .info_box{
 //     // width: 540px;
 //     border-radius: 5px;
@@ -59,21 +73,23 @@ body{
     font-size: 20px;
 
 }
-.quiz-header{
+.quiz_header{
   padding: 3rem;
 }
 
-.quiz-header.active{
-    display: block;
-}
-
-.quiz-header{
+.quiz_header{
     display: none;
 }
 
+.quiz_header.active{
+    display: block;
+}
+
 .qa_ans_row input{
-    opacity: 0;
-    // position: absolute;
+    // opacity: 0;
+    // padding: 8px 15px;
+    position: absolute;
+    // visibility: hidden;
     // left:0;
     // top:0;
     // width: 100%;
@@ -86,7 +102,7 @@ body{
     display: block;
     // display: block;
     padding: 8px 15px;
-    background-color: #bad0c9;
+    // background-color: #bad0c9;
     border-radius: 15px;
     transition: all 0.3s ease-out;
 }
@@ -101,6 +117,7 @@ body{
 
 .qa_ans_row input[valid]:checked + span{
      background-color: green;
+     color: #fff;
 }
 
 h4{
