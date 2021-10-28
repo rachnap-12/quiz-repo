@@ -15,6 +15,7 @@ let scoreCount = 0;
 
 skipBtn.addEventListener('click',() => {
     step();
+    duration = 10;
   })
 
 const step = () => {
@@ -25,6 +26,8 @@ const step = () => {
       qaSet[count].className = 'quiz_header active';
       if(count == 4) {
           skipBtn.style.display='none';
+          clearInterval(durationTime);
+          countdown.innerHTML = 0;
       }
 
 }
@@ -33,6 +36,7 @@ ansRow.forEach((ansRowSingle) => {
     ansRowSingle.addEventListener('click',() => {
         setTimeout(() => {
             step();
+            duration = 10;
         }, 500)
        
         let valid = ansRowSingle.getAttribute("valid");
@@ -48,7 +52,17 @@ ansRow.forEach((ansRowSingle) => {
     })
 });
 
-
+const durationTime = setInterval(() => {
+    if(duration == 10) {
+        duration = 0;
+    }    
+     duration += 1;
+     countdown.innerHTML = duration;
+     if(countdown.innerHTML == "10"){
+         step();
+     }
+ 
+ }, 1000);
 
 
 

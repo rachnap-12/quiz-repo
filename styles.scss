@@ -5,7 +5,10 @@
 }
 body{
   background-color: #b8c6db;
-  background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7f7 100%);
+  background-image: url('quiz_image.jpg');
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7f7 100%);
   font-family: 'Poppins', sans-serif;
   display: flex;
   align-items: center;
@@ -84,8 +87,12 @@ p{
 .quiz_header.active{
     display: block;
 }
+.color_class{
+  background-color: white;
+}
 
 .qa_ans_row input{
+  // background-color: white;
     // opacity: 0;
     // padding: 8px 15px;
     position: absolute;
@@ -97,6 +104,10 @@ p{
     // z-index: 1;
 }
 
+// .qa_ans_row label{
+//   position: relative;
+//   // opacity: 0;
+// }
 .qa_ans_row span{
     text-align: center;
     display: block;
@@ -111,9 +122,9 @@ p{
     background-color: red;
 }
 
-.qa_ans_row input:checked + span{
-    background-color:wheat;
-}
+// .qa_ans_row input:checked + span{
+//     background-color:wheat;
+// }
 
 .qa_ans_row input[valid]:checked + span{
      background-color: green;

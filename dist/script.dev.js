@@ -15,6 +15,7 @@ var duration = 0; // let currentQuiz = 0;
 var scoreCount = 0;
 skipBtn.addEventListener('click', function () {
   step();
+  duration = 10;
 });
 
 var step = function step() {
@@ -28,6 +29,8 @@ var step = function step() {
 
   if (count == 4) {
     skipBtn.style.display = 'none';
+    clearInterval(durationTime);
+    countdown.innerHTML = 0;
   }
 };
 
@@ -35,6 +38,7 @@ ansRow.forEach(function (ansRowSingle) {
   ansRowSingle.addEventListener('click', function () {
     setTimeout(function () {
       step();
+      duration = 10;
     }, 500);
     var valid = ansRowSingle.getAttribute("valid");
 
@@ -46,7 +50,19 @@ ansRow.forEach(function (ansRowSingle) {
       score.innerHTML = scoreCount;
     }
   });
-}); // loadQuiz()
+});
+var durationTime = setInterval(function () {
+  if (duration == 10) {
+    duration = 0;
+  }
+
+  duration += 1;
+  countdown.innerHTML = duration;
+
+  if (countdown.innerHTML == "10") {
+    step();
+  }
+}, 1000); // loadQuiz()
 // function loadQuiz() {
 //     deselectAnswers()
 //     const currentQuizData = quizData[currentQuiz]
