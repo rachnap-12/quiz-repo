@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: #b8c6db;
+  background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7f7 100%);
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.start .info_box{
+    position: absoltue;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+// .start button{
+//     font-size:25px;
+//     font-weight: 500;
+//     padding:15px 30px;
+//     outline: none;
+//     border: none;
+//     border-radius: 5px;
+//     cursor: pointer;
+// }
+
+// .info_box{
+//     // width: 540px;
+//     border-radius: 5px;
+// }
+
+// .info_box .info_title{
+//     height: 60px;
+
+
+// }
+.qa_box{
+  background-color: #fff;
+  border-radius: 10px;
+//   box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+  width: 600px;
+//   overflow: hidden;
+}
+
+.qa_header{
+    background-color:#03cae4;
+    display: flex;
+    justify-content: space-between; 
+    padding: 15px;
+    // border-radius: 15px 15px 0 0;
+    font-size: 20px;
+
+}
+.quiz-header{
+  padding: 3rem;
+}
+
+.quiz-header.active{
+    display: block;
+}
+
+.quiz-header{
+    display: none;
+}
+
+.qa_ans_row input{
+    opacity: 0;
+    // position: absolute;
+    // left:0;
+    // top:0;
+    // width: 100%;
+    // height: 100%;
+    // z-index: 1;
+}
+
+.qa_ans_row span{
+    text-align: center;
+    display: block;
+    // display: block;
+    padding: 8px 15px;
+    background-color: #bad0c9;
+    border-radius: 15px;
+    transition: all 0.3s ease-out;
+}
+
+.qa_ans_row:hover span{
+    background-color: red;
+}
+
+.qa_ans_row input:checked + span{
+    background-color:wheat;
+}
+
+.qa_ans_row input[valid]:checked + span{
+     background-color: green;
+}
+
+h4{
+  padding: 1rem;
+  text-align: center;
+  margin: 0;
+}
+
+// ul{
+//   list-style-type: none;
+//   padding: 0;
+// }
+// ul li{
+//   font-size: 1.2rem;
+//   margin: 1rem 0;
+// }
+// ul li label{
+//   cursor: pointer;
+//   transition: all 0.3s ease-out;
+// }
+.footer{
+  background-color: #03cae4;
+//   color: #fff;
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around; 
+  padding: 15px;
+//   border-radius: 15px 15px 0 0;
+  font-size: 20px;
+//   transition: all 0.3s ease-out;
+}
+
+button{
+    border-radius: 15px;
+    font-weight: bold;
+}
+button:hover{
+  background-color: #04adc4;
+}
+button:focus{
+  outline: none;
+  background-color: #44b927;
+}
