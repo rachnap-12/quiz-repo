@@ -13,9 +13,10 @@ let count = 0;
 let duration = 0;  
 let scoreCount = 0;
 
+//skip button logic
 skipBtn.addEventListener('click',() => {
     traverse();
-    duration = 10;
+    duration = 20;
   })
 
 const traverse = () => {
@@ -36,8 +37,8 @@ ansRow.forEach((ansRowSingle) => {
     ansRowSingle.addEventListener('click',() => {
         setTimeout(() => {
             traverse();
-            duration = 10;
-        }, 500)
+            duration = 20;
+        }, 1500)
        
         let valid = ansRowSingle.getAttribute("valid");
         if(valid == "valid") {
@@ -57,14 +58,14 @@ ansRow.forEach((ansRowSingle) => {
     })
 });
 
-   
+ //set the timer  
 const durationTime = setInterval(() => {
-    if(duration == 10) {
+    if(duration == 20) {
         duration = 0;
     }    
      duration += 1;
      countdown.innerHTML = duration;
-     if(countdown.innerHTML == "10"){
+     if(countdown.innerHTML == "20"){
         traverse();
      }
  }, 1000);
