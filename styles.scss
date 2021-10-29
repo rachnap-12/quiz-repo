@@ -42,11 +42,11 @@ body{
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    background-color: rgb(199, 165, 101);    
+    background-color: #52cedf;    
 }
 
 .start_class{
-  background-color:#52cedf;
+  background-color: rgb(204, 86, 204);;
 }
 
 .qa_box{
@@ -56,7 +56,8 @@ body{
 }
 
 .qa_header{
-    background-color:#52cedf;
+    // background-color:#52cedf;
+    background-color: rgb(204, 86, 204);
     display: flex;
     justify-content: space-between; 
     padding: 15px;
@@ -65,7 +66,7 @@ body{
 
 .quiz_header{
   padding: 3rem;
-  background-color: rgb(245, 233, 208);
+  background-color: #52cedf;
 }
 
 .quiz_header{
@@ -113,7 +114,7 @@ h4{
 }
 
 .footer{
-  background-color: #52cedf;
+  background-color: rgb(204, 86, 204);;
   width: 100%;
   cursor: pointer;
   display: flex;
@@ -138,7 +139,7 @@ button:focus{
 .score_class{
   // font-size: 20px;
   animation: blinker 1s linear infinite;
-  color: #1c87c9;
+  color: rgb(209, 16, 209);
   font-size: 30px;
   font-weight: bold;
   font-family: sans-serif;
