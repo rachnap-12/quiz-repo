@@ -3,9 +3,9 @@ A quiz to test your knowledge of JavaScript fundamentals, powered by... JavaScri
 
 
 ## Built With
-   HTML,
-   CSS and
-   JavaScript
+ * HTML
+ * CSS 
+ * JavaScript
 
 ## Website
 https://rachnap-12.github.io/quiz-repo/index.html
