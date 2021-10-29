@@ -6,9 +6,6 @@
 body{
   background-color: #b8c6db;
   background-image: url('quiz_image.jpg');
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7f7 100%);
   font-family: 'Poppins', sans-serif;
   display: flex;
   align-items: center;
@@ -16,15 +13,14 @@ body{
   height: 100vh;
   overflow: hidden;
   margin: 0;
-  // background-size: cover;
 }
 
-.start .info_box{
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-}
+// .start .info_box{
+//     position: absolute;
+//     // top:50%;
+//     // left:50%;
+//     // transform: translate(-50%,-50%);
+// }
 
 .info_title{
   text-align: center;
@@ -43,14 +39,10 @@ body{
     margin-left: 230px;
     margin-bottom: 20px;
     padding:15px 30px;
-    // outline: none;
-    // width: 100px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    background-color: rgb(199, 165, 101);
-
-    
+    background-color: rgb(199, 165, 101);    
 }
 
 .start_class{
@@ -60,9 +52,7 @@ body{
 .qa_box{
   background-color: #fff;
   border-radius: 10px;
-//   box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
   width: 600px;
-//   overflow: hidden;
 }
 
 .qa_header{
@@ -70,10 +60,9 @@ body{
     display: flex;
     justify-content: space-between; 
     padding: 15px;
-    // border-radius: 15px 15px 0 0;
     font-size: 20px;
-
 }
+
 .quiz_header{
   padding: 3rem;
   background-color: rgb(245, 233, 208);
@@ -91,9 +80,6 @@ body{
 }
 
 .qa_ans_row input{
-  // background-color: white;
-    // opacity: 0;
-    // padding: 8px 15px;
     position: absolute;
     margin-top: 14px;
     margin-left: 30px;
@@ -127,17 +113,13 @@ h4{
 }
 
 .footer{
-  // background-color: #03cae4;
   background-color: #52cedf;
-//   color: #fff;
   width: 100%;
   cursor: pointer;
   display: flex;
   justify-content: space-around; 
   padding: 15px;
-//   border-radius: 15px 15px 0 0;
   font-size: 20px;
-//   transition: all 0.3s ease-out;
 }
 
 button{
@@ -151,4 +133,9 @@ button:hover{
 button:focus{
   outline: none;
   background-color: #44b927;
+}
+
+.score_class{
+  font-size: 20px;
+  animation: blinker 0.6s linear infinite;
 }
