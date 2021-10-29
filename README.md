@@ -1,15 +1,15 @@
 ### This is a simple Javascript Quiz application
 
-#Purpose
+## Purpose
 A quiz to test your knowledge of JavaScript fundamentals, powered by... JavaScript fundamentals.
 
 
-#Built With
+## Built With
 HTML
 CSS
 JavaScript
 
-#Website
+## Website
 https://rachnap-12.github.io/quiz-repo/index.html
 
 <!--
