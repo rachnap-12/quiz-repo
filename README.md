@@ -8,7 +8,7 @@ A quiz to test your knowledge of JavaScript fundamentals, powered by... JavaScri
  * JavaScript
 
 ## Website
-https://rachnap-12.github.io/quiz-repo/index.html
+https://rachnap-12.github.io/quiz-repo/start.html
 
 <!--
 **rachnap-12/rachnap-12** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
