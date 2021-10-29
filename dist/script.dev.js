@@ -14,11 +14,11 @@ var count = 0;
 var duration = 0;
 var scoreCount = 0;
 skipBtn.addEventListener('click', function () {
-  step();
+  traverse();
   duration = 10;
 });
 
-var step = function step() {
+var traverse = function traverse() {
   count += 1;
 
   for (var i = 0; i < qaSet.length; i++) {
@@ -37,7 +37,7 @@ var step = function step() {
 ansRow.forEach(function (ansRowSingle) {
   ansRowSingle.addEventListener('click', function () {
     setTimeout(function () {
-      step();
+      traverse();
       duration = 10;
     }, 500);
     var valid = ansRowSingle.getAttribute("valid");
@@ -65,6 +65,6 @@ var durationTime = setInterval(function () {
   countdown.innerHTML = duration;
 
   if (countdown.innerHTML == "10") {
-    step();
+    traverse();
   }
 }, 1000);

@@ -14,11 +14,11 @@ let duration = 0;
 let scoreCount = 0;
 
 skipBtn.addEventListener('click',() => {
-    step();
+    traverse();
     duration = 10;
   })
 
-const step = () => {
+const traverse = () => {
     count += 1;
     for (let i = 0; i < qaSet.length ; i++){
         qaSet[i].className = 'quiz_header';
@@ -35,7 +35,7 @@ const step = () => {
 ansRow.forEach((ansRowSingle) => {
     ansRowSingle.addEventListener('click',() => {
         setTimeout(() => {
-            step();
+            traverse();
             duration = 10;
         }, 500)
        
@@ -65,7 +65,7 @@ const durationTime = setInterval(() => {
      duration += 1;
      countdown.innerHTML = duration;
      if(countdown.innerHTML == "10"){
-         step();
+        traverse();
      }
  }, 1000);
 

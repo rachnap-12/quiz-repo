@@ -141,8 +141,3 @@ button:focus {
     opacity: 0;
   }
 }
-@media (min-width: 992px) {
-  .search-box__input {
-    width: calc((100% / 3) - 50px);
-  }
-}
