@@ -26,17 +26,35 @@ body{
     transform: translate(-50%,-50%);
 }
 
+.info_title{
+  text-align: center;
+  margin-right: 30px;
+}
+
+.info_list{
+  text-align: left;
+  margin-top: 15px;
+  margin-left: 60px;
+}
+
 #start{
     font-size:25px;
     font-weight: bold;
+    margin-left: 230px;
+    margin-bottom: 20px;
     padding:15px 30px;
-    outline: none;
+    // outline: none;
     // width: 100px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     background-color: rgb(199, 165, 101);
+
     
+}
+
+.start_class{
+  background-color:#52cedf;
 }
 
 .qa_box{
