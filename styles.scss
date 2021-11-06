@@ -114,13 +114,21 @@ h4{
 }
 
 .footer{
-  background-color: rgb(204, 86, 204);;
+  background-color: rgb(204, 86, 204);
   width: 100%;
   cursor: pointer;
   display: flex;
   justify-content: space-around; 
   padding: 15px;
   font-size: 20px;
+}
+
+#reload{
+  margin-left: 200px;
+  font-size: 15px ;
+  border-radius: 15px;
+  font-weight: bold;
+  background-color:  rgb(204, 86, 204);;
 }
 
 button{
